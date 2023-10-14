@@ -6,7 +6,9 @@
   "scripts": {
     "prepare": "husky install",
     "start": "node public/index.js",
-    "start:dev": "node --watch public/index.js"
+    "start:dev": "node --watch public/index.js",
+    "lint:prettier": "prettier --ignore-path .gitignore --ignore-unknown",
+    "lint:eslint": "eslint --ignore-path .gitignore --max-warnings 0"
   },
   "keywords": [],
   "author": "",
