@@ -1,13 +1,24 @@
 class cell {
   isAlive;
+  neighbours;
 
   constructor(isAlive) {
     this.isAlive = isAlive;
   }
 
-  die() {}
+  state() {
+    return this.isAlive;
+  }
 
-  reborn() {}
+  die() {
+    this.isAlive = false;
+  }
+
+  live() {
+    this.isAlive = true;
+  }
+
+  numberNeighbours() {}
 }
 
 export default cell;

@@ -1,9 +1,9 @@
 import World from "./World/World.js";
-import cell from "./Cell/Cell.js";
 
-const callLength = 3;
+const board = new World();
 
-const Cell = new Cell(false);
-const grid = new World(cell);
+board.initWorld(3, false);
 
-grid.initWorld(callLength);
+board.cell[1][1].live();
+board.cell[2][0].live();
+board.cell[2][1].live();
