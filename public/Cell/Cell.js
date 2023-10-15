@@ -17,6 +17,8 @@ class cell {
   live() {
     this.isAlive = true;
   }
+
+  numberNeighbours() {}
 }
 
 export default cell;
